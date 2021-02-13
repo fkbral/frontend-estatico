@@ -34,6 +34,7 @@
       <div>
         <div>Escolaridade:</div>
         <input
+          required
           type="radio"
           name="escolaridade"
           id="scholarity1"
@@ -42,6 +43,7 @@
         <label for="scholarity1">Fundamental</label>
 
         <input
+          required
           type="radio"
           name="escolaridade"
           id="scholarity2"
@@ -50,6 +52,7 @@
         <label for="scholarity2">Medio</label>
 
         <input
+          required
           type="radio"
           name="escolaridade"
           id="scholarity3"
@@ -58,6 +61,7 @@
         <label for="scholarity3">Superior</label>
 
         <input
+          required
           type="radio"
           name="escolaridade"
           id="scholarity4"
@@ -91,7 +95,7 @@
 
       <div>
         <label for="birthday">Entre com sua data de nascimento</label>
-        <input type="date" name="dataDeNascimento" id="birthday" />
+        <input required type="date" name="dataDeNascimento" id="birthday" />
       </div>
 
       <div>
@@ -108,6 +112,16 @@
         <label for="avatar">Entre com sua foto de perfil</label>
         <input type="file" name="avatar" id="avatar" />
       </div>
+
+      <label for="location">Unidade:</label>
+      <select name="unidade" id="location" required>
+        <option selected disabled value="">Selecione uma unidade</option>
+        <option value="Brooklin">Brooklin</option>
+        <option value="Faria Lima">Faria Lima</option>
+        <option value="Moema">Moema</option>
+        <option value="Centro">Centro</option>
+        <option value="Vila Olímpia">Vila Olímpia</option>
+      </select>
 
       <div>
         <button>cadastrar</button>
