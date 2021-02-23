@@ -18,8 +18,18 @@ body {
     "Droid Sans", "Segoe UI", "Helvetica", Arial, sans-serif;
 }
 
+header {
+  position: fixed;
+  background-color: white;
+  margin: auto;
+}
+
+main {
+  padding-top: 108px;
+}
+
 header,
-section > div {
+main > section > div {
   width: 80%;
   margin: auto;
 }
@@ -63,6 +73,15 @@ header form#search-box input {
   font-size: 1.6rem;
   border-radius: 24px;
   background-color: rgba(34, 34, 34, 0.1);
+}
+
+header .product-categories img {
+  border-radius: 50%;
+}
+
+main .category {
+  width: 180px;
+  display: inline-block;
 }
 
 ul {
