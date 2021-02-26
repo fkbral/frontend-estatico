@@ -22,15 +22,20 @@ button {
   cursor: pointer;
 }
 
-header,
-main > section > div {
+main > section > div,
+header > div,
+nav {
   max-width: 1320px;
   margin: auto;
 }
 
 header {
+  width: 100%;
   font-size: 1.4rem;
-  padding: 1rem 0 0;
+  padding: 1rem 0 1.5rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 header img {
@@ -109,6 +114,7 @@ header .product-categories img {
   margin: 15px 0 0 0;
   border: none;
   background-color: transparent;
+  cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
 }
 
 .product-categories .category button i {
@@ -139,7 +145,12 @@ ul {
 }
 
 nav {
-  margin: 1.5rem 0;
+  margin: 0 auto 1.5rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 ul.category-links {
