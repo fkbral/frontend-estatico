@@ -86,9 +86,32 @@ ul {
   list-style: none;
 }
 
-@media (max-width: 425px) {
+/* Laptop pequeno */
+@media (max-width: 1024px) {
   :root {
     --default-margin: 2.2rem 0;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  :root {
+    --default-margin: 2.2rem 0;
+  }
+}
+
+/* Tablet e Celulares */
+@media (max-width: 768px) and (min-width: 426px) {
+  :root {
+    --h2-size: 2.8rem;
+    --navigation-spacing: 0 0 0 2.2rem;
+    --navigation-font-size: 2.2rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 425px) {
+  :root {
     --h2-size: 2.4rem;
     --navigation-spacing: 0 0 0 1.2rem;
     --navigation-font-size: 1.8rem;
@@ -96,5 +119,12 @@ ul {
 
   h1 {
     font-size: 3.2rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 340px) {
+  :root {
+    --h2-size: 2rem;
   }
 }
